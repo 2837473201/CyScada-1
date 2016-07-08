@@ -16,7 +16,7 @@ namespace CyScada.Common
 
         private static Queue<string> logQueue = new Queue<string>();
         private static object locker = new object();
-        private static bool runner = true;
+        private volatile static bool runner = true;
 
         public enum MappingType
         {

@@ -34,6 +34,8 @@ namespace CyScada.Web.WebApi.Controllers
         {
             return OpcClient.OpcClient.ItemTable;
         }
+
+
         public Hashtable Get(string tagList)
         {
             var result = new Hashtable();
